@@ -1,7 +1,4 @@
 package com.task_management.org.service;
-
-
-
 import com.task_management.org.document.ProjectDocument;
 import com.task_management.org.document.TaskDocument;
 import com.task_management.org.repository.ProjectSearchRepository;
