@@ -23,5 +23,5 @@ public class ProjectDocument {
     @Field(type = FieldType.Keyword, name = "createdByUsername")
     private String createdByUsername;
 
-    // Getters and Setters
+    // Getters and Setters setby @data
 }

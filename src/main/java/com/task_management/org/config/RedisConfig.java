@@ -1,4 +1,3 @@
-// src/main/java/com/task_management/org/config/RedisConfig.java
 package com.task_management.org.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
