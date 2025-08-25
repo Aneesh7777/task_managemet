@@ -1,4 +1,3 @@
-// src/main/java/com/task_management/org/controller/AuthController.java
 package com.task_management.org.controller;
 
 import com.task_management.org.dto.AuthRequest;

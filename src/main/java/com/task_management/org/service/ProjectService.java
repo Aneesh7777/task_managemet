@@ -37,6 +37,7 @@ public class ProjectService {
 
     @Transactional
     @CacheEvict(value = "projects", allEntries = true)
+    @PreAuthorize("hasRole('ADMIN')")
     public ProjectDto createProject(ProjectRequestDto requestDto) {
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
         User currentUser = userRepository.findByUsername(username)
@@ -103,7 +104,7 @@ public class ProjectService {
     }
 
     @Transactional
-    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     @Caching(evict = {
             @CacheEvict(value = "projects", key = "#id"),
             @CacheEvict(value = "projects", allEntries = true)
